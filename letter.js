@@ -12,6 +12,9 @@ function Letter(letter) {
     this.isGuessed = (guess) => {
         if (guess === this.letter) {
             this.guessed = true
+            return this.guessed
+        } else {
+            return false
         }
     }
 }
